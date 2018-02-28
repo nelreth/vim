@@ -8,7 +8,7 @@ About {{{2
 
   Notation for key sequences:
 
-  \      Leader (see `<leader>`)
+  ,      Leader (see `<leader>`)
   ‹r›    A register (", *, 0, 1, …)
          See `registers`
   ‹Move› A motion or a text object
