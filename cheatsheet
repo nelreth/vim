@@ -1,0 +1,115 @@
+##############################################################################
+# VIM CHEATSHEET - borrowed from https://github.com/LeCoupa/awesome-cheatsheets
+# WEBSITE: http://www.vim.org/  
+# DOCUMENTATION: https://vim.sourceforge.io/docs.php
+##############################################################################
+
+
+##############################################################################
+# CURSOR MOVEMENTS
+##############################################################################
+h                   move left
+j                   move down
+k                   move up
+l                   move right
+w                   jump by start of words (punctuation considered words)
+W                   jump by words (spaces separate words)
+e                   jump to end of words (punctuation considered words)
+E                   jump to end of words (no punctuation)
+b                   jump backward by words (punctuation considered words)
+B                   jump backward by words (no punctuation)
+ge                  jump backward to end of words
+0                   (zero) start of line
+^                   first non-blank character of line
+$                   end of line
+)                   move the cursor forward to the next sentence.
+(                   move the cursor backward by a sentence.
+{                   move the cursor a paragraph backwards
+}                   move the cursor a paragraph forwards
+]]                  move the cursor a section forwards or to the next {
+[[                  move the cursor a section backwards or the pre
+H                   move the cursor to the top of the screen.
+M                   move the cursor to the middle of the screen.
+L                   move the cursor to the bottom of the screen.
+
+##############################################################################
+# BOOKMARKS
+##############################################################################
+
+:marks              list all the current marks
+ma                  make a bookmark named a at the current cursor position
+`a                  go to position of bookmark a
+'a                  go to the line with bookmark a
+`.                  go to the line that you last edited
+
+##############################################################################
+# EDITING
+##############################################################################
+
+J                   join line below to the current one
+~                   switch case
+g~iw                switch case of current word
+gUiw                make current word uppercase
+guiw                make current word lowercase
+gU$                 make uppercase until end of line
+gu$                 make lowercase until end of line
+==                  auto-indent current line
+ddp                 swap current line with next
+ddkp                swap current line with previous
+
+##############################################################################
+# COPYING AND MOVING TEXT
+##############################################################################
+
+yw                  yank word
+yy                  yank (copy) a line
+2yy                 yank 2 lines
+p                   put (paste) the clipboard after cursor/current line
+P                   put (paste) before cursor/current line
+:set paste          avoid unexpected effects in pasting
+:registers          display the contents of all registers
+"xyw                yank word into register x
+"xyy                yank line into register x
+:[range]y x         yank [range] lines into register x
+"xp                 put the text from register x after the cursor
+"xP                 put the text from register x before the cursor
+"xgp                just like "p", but leave the cursor just after the new text
+"xgP                just like "P", but leave the cursor just after the new text
+:[line]put x        put the text from register x after [line]
+
+##############################################################################
+# MACROS
+##############################################################################
+
+qa                  start recording macro 'a'
+q                   end recording macro
+@a                  replay macro 'a'
+@:                  replay last command
+
+
+##############################################################################
+# MULTIPLE FILES
+##############################################################################
+
+:e filename         edit a file in a new buffer
+:tabe filename      edit a file in a new tab (Vim7, gVim)
+:ls                 list all buffers
+:bn                 go to next buffer
+:bp                 go to previous buffer
+:bd                 delete a buffer (close a file)
+:b1                 show buffer 1
+:b vimrc            show buffer whose filename begins with "vimrc"
+
+
+##############################################################################
+# QUICKFIX WINDOW
+##############################################################################
+
+copen               open quickfix window
+cclose              close quickfix window
+cc [nr]             display error [nr]
+cfirst              display the first error
+clast               display the last error
+[count]cn           display [count] next error
+[count]cp           display [count] previous error
+
