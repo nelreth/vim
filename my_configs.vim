@@ -1,5 +1,8 @@
+set termguicolors
 colorscheme one
 set number relativenumber
+set cursorline
+highlight CursorLine guibg=#404040
 
 set foldmethod=indent
 set foldnestmax=10
