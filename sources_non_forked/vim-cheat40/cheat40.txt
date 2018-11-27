@@ -53,6 +53,75 @@ About {{{2
        before a motion or a text object)
   *    Acts on text under/after cursor
 }}}
+----------------------------------------
+bufexplorer {{{1
+be (normal open)
+bt (toggle open/close)
+bs (force horizontal split open)
+bv (force vertical split open)
+}}}
+
+ctrlp {{{1
+:CtrlP or :CtrlP [starting-directory]
+    to invoke CtrlP in find file mode.
+if CtrlP is open {{{2
+<F5> to purge the cache for the current
+     directory to get new files
+<c-f> and <c-b> to cycle between modes
+<c-d> to switch to filename only search
+      instead of full path
+<c-r> to switch to regexp mode
+<c-j>, <c-k> or the arrow keys to
+      navigate the result list
+<c-t> or <c-v>, <c-x> to open the
+      selected entry (new tab/split)
+<c-n>, <c-p> to select the next/previous
+      string in the prompt's history.
+<c-y> to create a new file and its
+      parent directories
+<c-z> to mark/unmark multiple files
+      and <c-o> to open them
+}}}
+}}}
+
+mru.vim - Most recent used {{{1
+:MRU
+'o' - open file under the cursor
+'v' - open file in read-only mode
+'t' - open file in tab
+'u' - update file list
+'q' - close MRU window
+}}}
+
+NERDTree {{{1
+:NERDTreeToggle
+}}}
+
+tabular {{{1
+TODO
+}}}
+
+easymotion {{{1
+<Leader><Leader>w
+<Leader><Leader>fo (all "o" chars)
+}}}
+
+vim-expand-region {{{1
++ to expand the visual selection
+_ to shrink it
+}}}
+
+markdown {{{1
+zr: reduces fold level
+zR: opens all folds
+zm: increases fold level
+zM: folds everything all the way
+za: open a fold your cursor is on
+zA: open a fold your cursor is on recursively
+zc: close a fold your cursor is on
+zC: close a fold your cursor is on recursively
+}}}
+----------------------------------------
 File {{{1
 New untitled document    :enew         N
 New/open file or dir     :e …          N
