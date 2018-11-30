@@ -17,3 +17,4 @@ nnoremap <Leader>q' ciw''<Esc>P
 :map <leader>h   :set list!<CR>
 set iskeyword+=-
 :let g:peekaboo_window = 'vert bo 60new'
+set rtp+=/usr/local/opt/fzf
