@@ -1,5 +1,6 @@
 set termguicolors
-colorscheme one
+"colorscheme one
+colorscheme gruvbox
 set number relativenumber
 set cursorline
 highlight CursorLine guibg=#404040
